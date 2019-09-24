@@ -9,8 +9,12 @@ var corsOptions = {
 var wsdl = "http://192.168.50.20/kyc/KYCService.asmx?wsdl";
 var controller = require("rest-to-soap-mapper");
 
+router.get("/", (req, res) => {
+  res.send("Nida node app");
+});
+
 router.get(
-  "/",
+  "/api/",
   cors(corsOptions),
   controller(wsdl, "AuthenticateDocument", setArgs)
 );
