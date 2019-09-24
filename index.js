@@ -22,8 +22,8 @@ function setArgs(req) {
   };
 }
 
-// let PORT = process.env.PORT ? process.env.PORT : 3500;
-let PORT = 3500;
+let PORT = process.env.PORT ? process.env.PORT : 3500;
+// let PORT = 3500;
 
 router.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);
