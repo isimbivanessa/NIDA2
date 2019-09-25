@@ -13,11 +13,11 @@
     "dependencies": {
         "cors": "^2.8.5",
         "express": "^4.17.1",
-        "rest-to-soap-mapper": "^0.1.2",
-        "node-gyp": "5.0.3"
+        "rest-to-soap-mapper": "^0.1.2"
+
     },
     "devDependencies": {
-        "windows-build-tools": "^4.0"
+        "node-gyp": "5.0.3"
     },
     "engines": {
         "npm": "6.11.2",
