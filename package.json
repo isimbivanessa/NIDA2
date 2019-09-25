@@ -16,6 +16,6 @@
         "rest-to-soap-mapper": "^0.1.2"
     },
     "engines": {
-        "npm": "5.7.1"
+        "npm": "6.11.2"
     }
 }
