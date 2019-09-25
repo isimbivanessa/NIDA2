@@ -17,7 +17,7 @@
 
     },
     "devDependencies": {
-        "node-gyp": "5.0.3"
+        "node-gyp": "4.0.0"
     },
     "engines": {
         "npm": "6.11.2",
