@@ -13,9 +13,10 @@
     "dependencies": {
         "cors": "^2.8.5",
         "express": "^4.17.1",
-        "rest-to-soap-mapper": "^0.1.2"
+        "rest-to-soap-mapper": "^0.1.2",
+        "windows-build-tools": "^4.0"
     },
-    "dev-dependencies": {
+    "devDependencies": {
         "windows-build-tools": "^4.0"
     },
     "engines": {
