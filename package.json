@@ -15,6 +15,9 @@
         "express": "^4.17.1",
         "rest-to-soap-mapper": "^0.1.2"
     },
+    "dev-dependencies": {
+        "windows-build-tools": "^4.0"
+    },
     "engines": {
         "npm": "6.11.2"
     }
