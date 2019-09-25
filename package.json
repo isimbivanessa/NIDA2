@@ -20,6 +20,7 @@
         "windows-build-tools": "^4.0"
     },
     "engines": {
-        "npm": "6.11.2"
+        "npm": "6.11.2",
+        "node": "10.15.3"
     }
 }
