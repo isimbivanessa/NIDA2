@@ -9,6 +9,13 @@ var corsOptions = {
 var wsdl = "http://192.168.50.20/kyc/KYCService.asmx?wsdl";
 var controller = require("rest-to-soap-mapper");
 
+function setArgs(req) {
+  return {
+    documentNumber: req.query.doc,
+    BankCode: req.query.code
+  };
+}
+
 router.get("/", (req, res) => {
   res.send("Nida node app");
 });
@@ -18,13 +25,6 @@ router.get(
   cors(corsOptions),
   controller(wsdl, "AuthenticateDocument", setArgs)
 );
-
-function setArgs(req) {
-  return {
-    documentNumber: req.query.doc,
-    BankCode: req.query.code
-  };
-}
 
 let PORT = process.env.PORT ? process.env.PORT : 3500;
 // let PORT = 3500;
