@@ -1,4 +1,9 @@
 var cors = require("cors");
+var morgan = require('morgan')
+
+require('dotenv').config()
+
+
 var router = require("express")();
 
 var corsOptions = {
@@ -15,6 +20,8 @@ function setArgs(req) {
     BankCode: req.query.code,
   };
 }
+
+router.use(morgan('combined'))
 
 router.get("/", (req, res) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
